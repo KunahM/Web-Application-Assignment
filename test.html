@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store Elements in Table Example</title>
+</head>
+<body>
+	<h1>Store Elements in Table Example</h1>
+	<form>
+		<label>Name:</label>
+		<input type="text" id="name" name="name"><br>
+		<label>Age:</label>
+		<input type="text" id="age" name="age"><br>
+		<label>Email:</label>
+		<input type="text" id="email" name="email"><br>
+		<button type="button" onclick="storeData()">Add to Table</button>
+	</form>
+	<table id="myTable">
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Email</th>
+		</tr>
+	</table>
+    
+<script>
+function storeData() {
+  // Get the input values from the form
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const email = document.getElementById("email").value;
+    
+  // Add the input values to the table
+  const table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
+  const newRow = table.insertRow();
+  const nameCell = newRow.insertCell(0);
+  const ageCell = newRow.insertCell(1);
+  const emailCell = newRow.insertCell(2);
+  nameCell.innerHTML = name;
+  ageCell.innerHTML = age;
+  emailCell.innerHTML = email;
+
+  // Save the input values to local storage
+  const data = JSON.parse(localStorage.getItem("myData") || "[]");
+  data.push({ name, age, email });
+  localStorage.setItem("myData", JSON.stringify(data));
+
+  // Clear the form
+  document.getElementById("name").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("email").value = "";
+}
+</script>
+
+
+
+
+</body>
+</html>

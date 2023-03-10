@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kalam&family=Righteous&family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital@1&family=Kalam&family=Lobster&family=Oswald:wght@300&family=Righteous&family=Roboto:wght@500&family=Unbounded&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5085bf6bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index1.html"><img src="images/Logo5.png"></a>
+            <div class="main">
+            <div class="nav-links">
+                <ul>
+                <li><a href="Index1.html"><b>HOME</b></a></li> 
+                <li><a href="About.html"><b>ABOUT US</b></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </section> 
+
+    <!------------------------------FORM--------------------------->
+ <section>
+        <div class="head">
+            <h12><img src="images/CH.png"></h12>
+        </div>
+</section> 
+<section> 
+<div class="head1">
+    <h13><b>Join Ceilo Honors</b></h13>
+</div>
+</section>
+<div class="container">
+<form>
+    <h14>All fields are required unless marked optional.</h14> &nbsp;&nbsp;
+        <div class="input-group1">     
+            <!-- In this section class element input1 is used with the styling of the form, 
+                Type=”text” designates a text input field for the input field.
+                Placeholder text is used to display until the user gives an input in the field.
+                span is used for validation purpose---->
+                <div class="input-field1">
+                    <label><b>First name</b></label>
+                    <section class="u">
+                    <input class="input1" type="text" placeholder="FirstName" id="FirstName" onkeyup="validateName()" required>
+                    <span class="error" id="name-error">Name is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <label><b>Surname</b></label>
+                    <section class="u">
+                    <input class="input1" type="text" placeholder="Surname" id="Surname" onkeyup="validateName()" required>
+                    <span class="error" id="last-error">Name is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <label><b>Phone No</b></label>
+                    <section class="u">
+                        <input class="unput1" type="tel" id="output" placeholder="123 456 7890" onkeyup="validateName()" required>
+                        <span id="phone-error">Phone No. is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <label><b>Email</b></label>
+                    <section class="u">
+                    <input class="input1" type="email" placeholder="Email" id="Email" onkeyup="validateName()"required>
+                    <span id="email-error">Email is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <section class="u">
+                    <label><b>Country/Region</b></label>
+                    <input class="input1" type="text" placeholder="Country" id="Country" onkeyup="validateName()" required>
+                    <span id="country-error">Country is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <section class="u">
+                    <label><b>Address</b></label>
+                    <input class="input1" type="text" placeholder="Address" id="Address" onkeyup="validateName()" required>
+                    <span id="address-error">Address is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <section class="u">
+                    <label><b>Address2</b></label>
+                    <input class="input1" type="text" placeholder="Address2" id="Address2" required>
+                    <span id="address2-error"></span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <label><b>Zip</b></label>
+                    <section class="u">
+                    <input class="input1" type="text" placeholder="Zip" id="Zip" onkeyup="validateName()" required>
+                    <span id="zip-error">Zip is required</span>
+                    </section>
+                </div> &nbsp;
+                <div class="input-field1">
+                    <section class="u">
+                    <label><b>Password</b></label>
+                    <input class="input1" type="text" placeholder="Password" id="Password" onkeyup="validateName()" required>
+                    <span id="password-error">Password is required</span>
+                    </section>
+                </div> &nbsp;
+            <p>By clicking Join I agree to the Ceilo Honors Program Terms and Conditions, Opens new tab and I agree to the collection, use, sharing and transfer of information as set out in the Ceilo Global Privacy Statement, Opens new tab. I also agree to receive special offers and promotions from Ceilo via email and direct mail. I understand that I can unsubscribe from offers and promotions by changing my subscription preferences in my Ceilo Honors profile.</p>
+            <div class="button10">
+            <button type="submit" onclick="ceilohotel()" class="hero-btn">Join for Free</button>
+            <span id="password-error"></span> 
+            </div>
+        </div>
+</form>
+</div>   
+<!----------script type="text/javascript">
+    function myfunc(event) {
+        event.preventDefault();
+        
+        var FirstName = document.getElementById("FirstName").value;
+        var Surname = document.getElementById("Surname").value;
+        var output = document.getElementById("output").value;
+        var Email = document.getElementById("Email").value;
+        var Country = document.getElementById("Country").value;
+        var Address = document.getElementById("Address").value;
+        var Address2 = document.getElementById("Address2").value;
+        var Zip = document.getElementById("Zip").value;
+        var Password = document.getElementById("Password").value;
+        
+        localStorage.setItem('ls_FirstName', FirstName);
+        localStorage.setItem('ls_Surname', Surname);
+        localStorage.setItem('ls_output', output);
+        localStorage.setItem('ls_Email', Email);
+        localStorage.setItem('ls_Country', Country);
+        localStorage.setItem('ls_Address', Address);
+        localStorage.setItem('ls_Address2', Address2);
+        localStorage.setItem('ls_Zip', Zip);
+        localStorage.setItem('ls_Password', Password);
+    }
+</script---------------------->  
+<script>
+  function ceilohotel() {
+  // Get the input values from the form
+  var FirstName = document.getElementById("FirstName").value;
+  var Surname = document.getElementById("Surname").value;
+  var output = document.getElementById("output").value;
+  var Email = document.getElementById("Email").value;
+  var Country = document.getElementById("Country").value;
+  var Address = document.getElementById("Address").value;
+  var Address2 = document.getElementById("Address2").value;
+  var Zip = document.getElementById("Zip").value;
+  var Password = document.getElementById("Password").value;
+
+  // Add the input values to the table
+  var table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
+  var newRow = table.insertRow();
+  var FirstNameCell = newRow.insertCell(0);
+  var SurnameCell = newRow.insertCell(1);
+  var outputCell = newRow.insertCell(2);
+  var EmailCell = newRow.insertCell(3);
+  var CountryCell = newRow.insertCell(4);
+  var AddressCell = newRow.insertCell(5);
+  var Address2Cell = newRow.insertCell(6);
+  var ZipCell = newRow.insertCell(7);
+  var PasswordCell = newRow.insertCell(8);
+  FirstNameCell.innerHTML = FirstName;
+  SurnameCell.innerHTML = Surname;
+  outputCell.innerHTML = output;
+  EmailCell.innerHTML = Email;
+  CountryCell.innerHTML = Country;
+  AddressCell.innerHTML = Address;
+  Address2Cell.innerHTML = Address2;
+  ZipCell.innerHTML = Zip;
+  PasswordCell.innerHTML = Password;
+
+  // Save the input values to local storage
+  var data = JSON.parse(localStorage.getItem("myData") || "[]");
+  data.push({ FirstName, Surname, output, Email, Country, Address, Address2, Zip, Password});
+  localStorage.setItem("myData", JSON.stringify(data));
+
+  // Clear the form
+  document.getElementById("FirstName").value = "";
+  document.getElementById("Surname").value = "";
+  document.getElementById("output").value = "";
+  document.getElementById("Email").value = "";
+  document.getElementById("Country").value = "";
+  document.getElementById("Address").value = "";
+  document.getElementById("Address2").value = "";
+  document.getElementById("Zip").value = "";
+  document.getElementById("Password").value = "";
+}
+</script>
+    
+<script>
+var nameError = document.getElementById('name-error');
+var lastError = document.getElementById('last-error');
+var phoneError = document.getElementById('phone-error');
+var emailError = document.getElementById('email-error');
+var countryError = document.getElementById('country-error');
+var addressError = document.getElementById('address-error');
+var zipError = document.getElementById('zip-error');
+var passwordError = document.getElementById('password-error');
+
+function validateName() {
+    var name = document.getElementById('FirstName').value;
+    {
+        if(name.length == 0){
+            nameError.innerHTML = 'Name is required';
+            return false; 
+        }
+        nameError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    
+    var last = document.getElementById('Surname').value;
+    {
+        if(last.length == 0){
+            lastError.innerHTML = 'Last Name is required';
+            return false; 
+        }
+        lastError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    
+    var Phone = document.getElementById('output').value;
+    {
+        if(Phone.length == 0){
+            phoneError.innerHTML = 'Phone No. is required';
+            return false; 
+        }
+        phoneError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+        
+    var Email = document.getElementById('Email').value;
+    {
+        if(Email.length == 0){
+            emailError.innerHTML = 'Email ID is required';
+            return false; 
+        }
+        emailError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    var Country = document.getElementById('Country').value;
+    {
+        if(Country.length == 0){
+            countryError.innerHTML = 'Country is required';
+            return false; 
+        }
+        countryError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    var Address = document.getElementById('Address').value;
+    {
+        if(Address.length == 0){
+            addressError.innerHTML = 'Country is required';
+            return false; 
+        }
+        addressError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    var Zip = document.getElementById('Zip').value;
+    {
+        if(Zip.length == 0){
+            zipError.innerHTML = 'Zip is required';
+            return false; 
+        }
+        zipError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+    }
+    var Password = document.getElementById('Password').value;
+    {
+        if(Password.length == 0){
+            passwordError.innerHTML = 'Password is required';
+            return false; 
+        }
+        passwordError.innerHTML = '<i class="fa-regular fa-circle-check"></i>';
+        return true;
+    }
+}
+    </script>
+
+<div class="jointable">    
+<table id="myTable">
+		<tr>
+			<th>First Name</th>
+			<th>Surname</th>
+			<th>Phone</th>
+            <th>Email</th>
+			<th>Country</th>
+			<th>Address</th>
+            <th>Address2</th>
+			<th>Zip</th>
+			<th>Password</th>
+		</tr>
+</table>
+</div>
+        <!-----------FOOTER--------->    
+    <section class="About100">
+        <p100><b>Ceilo Hotels is Ceilo's flagship brand and one of the largest hotel brands in the world. The brand is targeted at both business and leisure travelers with locations in major city centers, near airports, convention centers, and popular vacation destinations around the world.</b></p100>
+        <br>
+        <a href="Contact%20Us.html" class="contactbtn">CONTACT US</a>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+</body>
+</html>

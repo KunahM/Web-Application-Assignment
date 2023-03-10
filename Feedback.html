@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kalam&family=Righteous&family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital@1&family=Kalam&family=Lobster&family=Oswald:wght@300&family=Righteous&family=Roboto:wght@500&family=Unbounded&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Index1.html"><img src="images/Logo5.png"></a>
+            <div class="main">
+            <div class="nav-links">
+                <ul>
+                <li><a href="Index1.html"><b>HOME</b></a></li> 
+                <li><a href="About.html"><b>ABOUT US</b></a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </section> 
+
+    <!------------------------------FORM--------------------------->
+<section> 
+<div class="head1">
+    <h13><b>Feedback</b></h13>
+</div>
+</section>
+<script>
+		function addRow() {
+			// Get input field values
+			var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+			var message = document.getElementById("message").value;
+			var email = document.getElementById("email").value;
+			
+			// Get table reference
+			var table = document.getElementById("myTable");
+			
+			// Insert a new row in the table
+			var newRow = table.insertRow();
+			
+			// Insert new cells in the row
+			var cell1 = newRow.insertCell(0);
+			var cell2 = newRow.insertCell(1);
+			var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+			
+			// Insert values into the cells
+			cell1.innerHTML = name;
+            cell2.innerHTML = age;
+			cell3.innerHTML = message;
+			cell4.innerHTML = email;
+            
+             // Save the input values to local storage
+            var feedback = JSON.parse(localStorage.getItem("myObject") || "[]");
+            feedback.push({ name, age, message, email});
+            localStorage.setItem("myObject", JSON.stringify(feedback));
+		}
+</script>
+<div class="Feedback-col">
+	<form>
+		<label>Name:</label>
+		<input type="text" id="name" name="name"><br>
+        <label>Age:</label>
+		<input type="text" id="age" name="age"><br>
+		<label>Message:</label>
+        <textarea rows="7"  type="text" id="message" name="message"></textarea><br>
+		<label>Email:</label>
+		<input type="text" id="email" name="email"><br>
+		<button type="button" onclick="addRow()">Sumbit</button>
+	</form>
+</div>
+	<table id="myTable">
+		<tr>
+			<th>Name</th>
+            <th>age</th>
+			<th>message</th>
+			<th>Email</th>
+		</tr>
+	</table>
+
+
+        <!-----------FOOTER--------->    
+    <section class="About100">
+        <p100><b>Ceilo Hotels is Ceilo's flagship brand and one of the largest hotel brands in the world. The brand is targeted at both business and leisure travelers with locations in major city centers, near airports, convention centers, and popular vacation destinations around the world.</b></p100>
+        <br>
+        <a href="Contact%20Us.html" class="contactbtn">CONTACT US</a>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+</body>
+</html>
