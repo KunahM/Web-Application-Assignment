@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+
+/*-------------------SETTING A COMMON MARGIN-----------------*/
+*{
+    margin: -10px -10px;
+    padding: 0;
+}
+/*.header {
+*    min-height:100vh;
+*    width: 100%;
+*    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Images/Delhi.jpg);
+*    background-position: center;
+*    background-size: cover;
+*    position: relative;
+}
+*/
+/*----------------------------------------HOME PAGE------------------------------------------*/
+/*-------------------TO SET NAVIGATION LINK STYLING---------------*/
+.main{
+    display:flex;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 1; /*so it occupies all the space in the row*/
+    text-align: left;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    display: block;
+    margin:auto;
+    transition: 0.2s; 
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.Memberbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.signinbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #a89257;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.signinbtn:hover{
+    border: 1px solid #a89257;
+    background: white;
+    transition: 1s;
+}
+/*----------------------------------FIND YOUR STAY------------------------------------------*/
+
+
+.Stay{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(Images/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 100px;
+
+}
+.STAY{
+   /* margin-left: 150px;
+    margin-right: 150px;*/
+    text-align:center;
+}
+
+.STAY img{
+    width 100%;
+}
+.OFFERS{
+    margin-left: ;
+    margin-right: ;
+    margin-top: -50px;
+}
+h1{
+    color: black; 
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Unbounded', cursive;
+}
+h2{
+   color: black; 
+   text-align: center;
+   font-size: 15px;
+    margin-bottom: 30px;
+}
+button1{
+    background-color: black;
+    text-align:center;
+    padding: 10px 20px;
+    margin-left: 650px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+h3, h6{
+    background-color: #a89257;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Kalam';
+    margin-top: 50px;
+}
+h4{
+    color: black;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+h5{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Kalam';
+    margin-top: 50px;
+}
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: ;
+    text-align: center;
+}
+/*a{
+    margin-left: 150px;
+    margin-right: 150px;
+}*/
+h7{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 250px;
+    font-family: ;
+}
+.ad{
+    background-color: black;
+    margin-top: -1.5%;
+    display: flex;
+    padding: 10px 20px;
+}
+
+.row{
+    background-color: ;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/*------------------------------OFFERS SECTION-------------------------------*/
+.OFFERS-col{
+    flex-basis: 31%;
+    background-color: white                                                                       ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s; 
+}
+/*.OFFERS-col1{
+    flex-basis: 31%;
+    background-color: ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left:15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.OFFERS-col2{
+    flex-basis: 31%;
+    background-color: ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right:15%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}*/
+.OFFERS-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.DESTINATIONS-col{
+    flex-basis: 31%;
+    background-color: ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s; 
+}
+.DESTINATIONS-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.DESTINATIONS-col1{
+    flex-basis: 31%;
+    background-color: ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 200px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s; 
+}
+.DESTINATIONS-col1:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.DESTINATIONS-col2{
+    flex-basis: 31%;
+    background-color: ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 200px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.2s; 
+}
+.DESTINATIONS-col2:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+button5 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 125px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+button6 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 165px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+button7 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 120px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+/*-------------------FOOTER-----------------------*/
+.About100{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(Images/Footer.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px;
+    margin-top: 50px;
+}
+p100{
+    color: white;
+}
+.contactbtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.contactbtn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.icons .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: white
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    display: block;
+    margin:auto;
+    transition: 0.2s; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: royalblue;
+}
+.dropdown{
+    flex: 1; /*so it occupies all the space in the row*/
+    text-align: center;
+}
+
+/*----------------------------------ABOUT PAGE-------------------------------------------*/
+.About{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Jodhpur.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+h11{
+    color: white; 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Unbounded', cursive;
+    padding: 0px 550px;
+}
+.About1{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    padding: 50px 150px;
+}
+.About1 img{
+    background-color: lightgrey;
+    width: 700px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+p11{
+    font-size: 14px;
+    font-family: 'Arvo', serif;
+    color: black;
+    background-color: lightblue;
+    width: 800px;
+    padding: 30px 30px;
+    margin-right: 0px;
+}
+p14{font-size: 14px;
+    font-family: 'Arvo', serif;
+    color: black;
+    background-color: white;
+    width: 800px;
+    padding: 30px 30px;
+    margin-right: 0px;
+    display:flex;
+}
+.About9{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 500px;
+    align-items: left;
+    padding: 0px 0px;
+    margin-left: 150px;    
+}
+.About2{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 500px;
+    align-items: left;
+    padding: 0px 0px;
+    margin-left: -100px;
+}
+.About3{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.About1.1{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.AboutL{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+h12{
+    background-color: ;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Kalam';
+    margin-top: 150px;
+}
+p12{
+    font-size: 14px;
+    font-family: 'Unbounded', cursive;
+    color: black;
+    margin-top: 50px;
+}
+.About4{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    width: 500px;
+    align-items: flex;
+    margin-bottom: 20px;
+}
+.About5{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin-left: 20px;
+    width: 500px;
+    align-items: flex;
+    margin-bottom: 20px;
+}
+.About6{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin-left: 20px;
+    width: 500px;
+    align-items: flex;
+    margin-bottom: 20px;
+}
+.About7{
+    display: flex;
+    margin-top:50px;
+    margin-bottom: 100px;
+}
+.About1.3{
+    margin-bottom: 50px;
+    display: flex;
+}
+p13{
+    color: black;
+    font-size: 14px;
+    font-weight: 0;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: ;
+}
+
+.About9{
+    text-align: center; 
+}
+.About9{
+    box-shadow: 0 4px 2px 10px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    width: 500px;
+    align-items: left;
+    padding: 0px 0px;
+    margin-left: -100px;
+}
+.About8{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    padding: 0px 150px;
+}
+.About8 img{
+    background-color: white;
+    width: 700px;
+    margin-right: 20px;
+    margin-top: 0px;
+}
+hl{
+    background-color: ;
+    color: black;
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Kalam';
+    margin-top: 0px;
+    margin-left: -150px;
+}
+.About200{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(Images/Footer3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px;
+    margin-top: px;
+}
+p200{
+    color: white;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: ;
+}
+/*-----------------------------------------DINING----------------------------------------*/
+.Dine{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Dining{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Dining3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+h11{
+    color: black; 
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Unbounded', cursive;
+    padding: 0px 600px 0px;
+}
+p21, p22, p23{
+    text-align: center;
+    margin-top: 500px;
+    font-family: 'Unbounded', cursive;
+}
+.Dining2, .Dining3{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+h22{
+    background-color: ;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Kalam';
+    margin-top: 50px;
+}
+button25 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 125px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+button26 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 125px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+button27 {
+    background-color: royalblue;
+    text-align:center;
+    padding: 10px 16px;
+    margin: 50px 5px;
+    margin-left: 125px;
+    border-radius: 0px;
+    color: white;
+    width: 20px;
+}
+.About300{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(Images/Dining.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px;
+    margin-top: 50px;
+}
+p300{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: ;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: royalblue;
+    display: block;
+    margin:auto;
+    transition: 0.2s; 
+}
+/*----------------------------------VARQ----------------------------------------------*/
+.Dine{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Varq{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Varq1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+.Varq1{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+.Varq2{
+    margin-top: 50px;
+}
+h211{
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+}
+h212{
+    font-family: monospace;
+    font-size: 60px;
+}
+p211{
+    text-align: center;
+    margin-top: 500px;
+    font-family: 'Unbounded', cursive;
+}
+h213{
+    background-color: lightgrey;
+    color: black;
+    font-size: 20px;
+    text-decoration: ;
+    margin-left: 0px;
+    font-family: ;
+}
+.ad1{
+    background-color: lightgrey;
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-left: -150px;
+    margin-right: -150px;
+}
+.butt{
+    text-align: center;
+    text-decoration: none;
+}
+.butt1{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: ;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.butt1:hover{
+    border: 1px solid beige;
+    background: beige;
+    transition: 1s;
+}
+
+.icon .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    display: flex;
+}
+.menubtn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: ;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.menubtn:hover{
+    border: 1px solid beige;
+    background: beige;
+    transition: 1s;
+}
+textbox{
+    font-family: sans-serif;
+}
+.About400{
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(Images/Varq3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px;
+    margin-top: 50px;
+}
+.Varq5{
+    margin-top: 20px;
+}
+/*-------------------EP LOUNGE---------------------*/
+.EPLounge{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Emperor-Lounge.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+/*-------------------RAIA---------------------*/
+.Raia{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Raia.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+/*-------------------PALM-KITCHEN---------------------*/
+.Palm{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Palm-kitchen.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+/*-------------------THE-COAST---------------------*/
+.Coast{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/The-coast6.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+/*-------------------HOLIDAYS----------------------*/
+.Holidays{
+    text-align: center;
+    font-size: 50px;
+}
+/*-------------------SIGN IN----------------------*/
+.sign{
+    text-align: center;
+    margin-left: 450px;
+    margin-right: 450px;
+}
+.Signin{
+    text-align: center;
+    font-size: 50px;
+    border-radius: 50px;
+}
+.specification{
+    margin-bottom: 100px;
+    margin-top: 10px;
+    align-content: center;
+    font-size: 15px;
+    border-spacing: 0 0px;
+    border-collapse: separate;
+    
+}
+
+tr,td {
+    border-top:1px solid black;
+    text-align: center;
+    height: 100px;
+}
+td img{
+    width: auto;
+    height: auto;
+}
+.btn-field{
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+    justify-content: space-between;
+    text-align: center;
+}
+.btn-field:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+h9{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+h10{
+    font-size: 20px;
+}
+/*--------------------TENTRUM----------------------*/
+.Dine{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.Tentrem{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Tentrem2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+.HK{
+   display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Lobby.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px; 
+}
+.Italy{
+   display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Italy2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px; 
+}
+.Arabia{
+   display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Saudi-Header.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px; 
+}
+.Thailand{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Thailand-Header.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+.Varq1{
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+.Varq2{
+    margin-top: 50px;
+}
+h311{
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+}
+h312{
+    font-family: monospace;
+    font-size: 20px;
+}
+p311{
+    text-align: center;
+    margin-top: 500px;
+    font-family: 'Unbounded', cursive;
+}
+h500{
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+}
+.cont{
+    text-align: center;
+    margin-top: 50px;
+}
+.cont-icon{
+    text-align: center;
+    font-size: 30px;
+}
+h501{
+    font-size: 20px;
+}
+/*--------------------------------SIGN-IN---------------------------------*/
+h8{
+    text-align: center;
+    font-size: 40px;
+    font-family: ;
+}
+.Signin{
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 40px 20px 70px;
+}
+
+
+/*---------------------JOIN NOW FORM-----------------------------*/
+.head{
+    text-align: center;
+    background-color: #a89257;
+}
+.head img{
+    margin-top: 20px;
+    border-color: black;
+    border-radius: 20px;
+}
+h13{
+    text-align: center;
+    
+}
+.head1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.head2{
+    margin-left: px;
+    margin-top: px;
+    font-size: 20px;
+}
+.form2-control{
+    display: ;
+}
+.container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: vh;
+    background: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:  white;
+}
+form2{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20vw 10vw;
+    width: 90%;
+    max-width: 600px;
+}
+form2 input {
+    border: ;
+    margin: 10px 20px;
+    padding: 20px;
+    padding-right: 350px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;    
+}
+h14{
+    margin-top: -250px;
+    font-size: 20px;
+}
+input-group1{
+    justify-content: space-between;
+}
+.input-field1 span{
+    position: absolute;
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+.input-field1{
+    justify-content: space-around;
+}
+label{
+    font-size: 20px;   
+}
+button{
+    text-align: center;
+}
+form2 button{
+    padding: 15px;
+    padding-right: 240px;
+    padding-left: 230px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: -100px;
+}
+.button10{
+    text-align: center;
+}
+.table-container tr,td {
+    border-top:1px solid black;
+    text-align: center;
+    height: 100px;
+}
+/*---------------------------SIDE BAR MENU-----------------------*/
+.sidebar{
+    background: white;
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    transition: 0.3s ease;
+    transition-property: right;
+}
+
+.sidebar.active{
+  right: 0;  
+}
+
+.sidebar .menu {
+     width: 100%;
+    margin-top: 80px;
+    }
+
+.sidebar .menu .item{
+    position: relative;
+    cursor: pointer;
+    
+}
+    
+.sidebar .menu .item a{
+    
+    color: black;
+    
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 8px 30px;
+    line-height: 60px;
+    font-family: "kalam", cursive;
+    
+}    
+
+.sidebar .menu .item a:hover{
+    background: #ffffff; 
+    transition: 0.3s ease;
+}
+
+.sidebar .menu .item a .dropdown{
+   position: absolute;
+    right: 0;
+    margin: 15px;
+    transition:  0.3s ease;
+}
+
+
+.sidebar .menu .item .sub-menu {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .menu .item .sub-menu a{
+  padding-left: 80px;
+}
+
+.menu-btn{
+    position: absolute;
+    font-size: 28px;
+    right: 30px;
+    top: 64px;
+    cursor: pointer;
+    
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.close-btn{
+    position: absolute;
+    color:black;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+.Joinbtn{
+    text-align: center;
+}
+/*--------------------------------FEEDBACK-----------------------------*/
+.Feedback-col{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+#sTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Table th, #myTable td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#Table th {
+  background-color: #a89257;
+  font-weight: bold;
+  color: white;
+}
+
+#Table tr:hover {
+  background-color: #f5f5f5;
+}
+/*---------------------JOIN NOW FORM-----------------------------*/
+.head1{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.head2{
+    margin-left: px;
+    margin-top: px;
+    font-size: 20px;
+}
+.form-control{
+    display: ;
+}
+.container{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: vh;
+    background: ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:  white;
+}
+form{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5vw 10vw;
+    margin-top: 25px;
+    width: 90%;
+    max-width: 600px;
+}
+form input {
+    border: ;
+    margin: 10px 20px;
+    padding: 20px;
+    padding-right: 350px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;    
+}
+input-group1{
+    justify-content: space-between;
+}
+.input-field1 span{
+    position: relative;
+    font-size: 14px;
+    color: red;
+    bottom: 50px;
+    right: 17px;
+    left: 600px;
+}
+.input-group1 span i{
+    color: seagreen;
+}
+.input-field1{
+    justify-content: space-around;
+}
+label{
+    font-size: 20px;   
+}
+button{
+    text-align: center;
+}
+form button{
+    padding: 15px;
+    padding-right: 240px;
+    padding-left: 230px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: -100px;
+}
+.button10{
+    text-align: center;
+}
+Joinbtn{
+    text-align: center;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable th, #myTable td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+#myTable th {
+  background-color: #a89257;
+  font-weight: bold;
+  color: white;
+}
+
+#myTable tr:hover {
+  background-color: #f5f5f5;
+}
+
+/*---------------------------MEETING & CONFERENCES---------------------------*/
+.Meeting{
+   display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Meeting-Room.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px; 
+}
+.wedding1{
+    background-color: #a89257;
+    text-align: center;
+}
+h2111{
+    text-align: center;
+    color: white;   
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
+}
+.icons1 .fa{
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.Wed{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #a89257;
+}
+.Conference{
+    margin-left: ;
+    margin-right: ;
+}
+/*-------------------------EXPERIENCES----------------------------------*/
+.Experience{
+    display: flex;
+    width:100%;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(Images/Game-Room.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding: 100px 0px 300px;
+}
+p51{
+    font-family: 'Arvo', serif;
+    text-align:center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-decoration: none;
+}
+.Exp{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+/*---------------------------WEDDING-----------------------------------*/
+.p-w{
+    text-align: center;
+}
+p-w{
+    font-size: 20px;
+    font-family: 'Unbounded', cursive;   
+    margin-left: 100px;
+    margin-right: 100px;
+}
